@@ -130,14 +130,15 @@ public class moves {
 		 new moves().swiftTurn();
 	 }
 	 public void options() {
+		 moves move=new moves();
 		 while(true) {
 			 
-		moves move=	new moves();
+		
 			move.board();
 		 System.out.println("options \n1-->undo\nany key-->continue");
 		 String option=sc.nextLine();
 		 if(option.equals("1")) {
-			 new moves().undo();
+			 move.undo();
 			 break;
 		 }
 		 else {
